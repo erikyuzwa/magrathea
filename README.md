@@ -34,7 +34,7 @@ In `application.js` add:
     //= require magrathea
 ```
 
-Somewhere in your markup, you'll need to add the switch code as well:
+Somewhere in an app view, you'll need to add the markup for the switch code as well:
 ```
     <div class="magrathea-switch-wrapper">
         <label class="magrathea-switch" for="checkbox">
@@ -44,7 +44,6 @@ Somewhere in your markup, you'll need to add the switch code as well:
         <em>Enable Dark Mode!</em>
     </div> 
 ```
-
 
 ## Development
 
