@@ -2,5 +2,6 @@ require "magrathea/version"
 
 module Magrathea
   class Error < StandardError; end
-  # Your code goes here...
+
+  class Engine < ::Rails::Engine; end
 end

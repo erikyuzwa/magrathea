@@ -1,0 +1,16 @@
+//
+// Copyright (c) Erik Yuzwa of Wazoo Media. All rights reserved.
+// Licensed under the MIT license. See LICENSE.txt file in the project root for details.
+//
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+h1 {
+  color: var(--secondary-color);
+}
+
+a {
+  color: var(--primary-color);
+}

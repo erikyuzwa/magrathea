@@ -1,8 +1,10 @@
 # Magrathea
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/magrathea`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is intended to be a drop-in starting point for handling light and dark mode CSS switching in your Rails app.
 
-TODO: Delete this and the text above, and describe your gem
+I've come from supporting many web applications, each with various "evolutions" of their CSS / SCSS structure. It
+remains to be seen how effective this approach is, but I was hoping to have something of a "starting point" that I could
+bring to projects and/or could be used.
 
 ## Installation
 
@@ -22,7 +24,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In `application.css` add:
+```
+    *= require magrathea
+```
+
+In `application.js` add:
+```
+    //= require magrathea
+```
+
+Somewhere in your markup, you'll need to add the switch code as well:
+```
+    <div class="magrathea-switch-wrapper">
+        <label class="magrathea-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <em>Enable Dark Mode!</em>
+    </div> 
+```
+
 
 ## Development
 
