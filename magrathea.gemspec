@@ -20,9 +20,12 @@ Gem::Specification.new do |spec|
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
-    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  end
+  # TODO: the following was generated but didn't work when I ran gem build
+  # spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
+  #  `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  # end
+  spec.files = %w[Gemfile CHANGELOG.md CODE_OF_CONDUCT.md LICENSE.txt Rakefile README.md magrathea.gemspec lib/magrathea/version.rb lib/magrathea.rb vendor/assets/javascripts/magrathea.js vendor/assets/stylesheets/_colors.scss vendor/assets/stylesheets/_dark.scss vendor/assets/stylesheets/_light.scss vendor/assets/stylesheets/_theme-switch.scss vendor/assets/stylesheets/_typography.scss vendor/assets/stylesheets/magrathea.scss]
+
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
