@@ -3,6 +3,8 @@
 // Licensed under the MIT license. See LICENSE.txt file in the project root for details.
 //
 
+// TODO: figure out how to export this for rails6 webpacker usage
+// keep this simple as we can without any dependencies
 (function() {
 
     var win = this;
@@ -10,13 +12,14 @@
 
         const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
+        // TODO: lots more error handling around localStorage needed even in 2020
         function switchTheme(e) {
             if (e.target.checked) {
                 document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark'); //add this
+                localStorage.setItem('theme', 'dark');
             } else {
                 document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light'); //add this
+                localStorage.setItem('theme', 'light');
             }
         }
 

@@ -2,9 +2,7 @@
 // Copyright (c) Erik Yuzwa of Wazoo Media. All rights reserved.
 // Licensed under the MIT license. See LICENSE.txt file in the project root for details.
 //
-/**
- * some simple CSS to style the dark-light theme switch
- */
+// TODO: these styles need a lot of improving -- maybe even removal? Just allow for our JS to tap into a checkbox event?
 
 .theme-switch-wrapper {
   display: flex;

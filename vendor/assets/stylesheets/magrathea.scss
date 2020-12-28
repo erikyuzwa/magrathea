@@ -9,5 +9,6 @@
 @import "dark";
 @import "typography";
 
+// TODO: figure out a way to make this optional? A LOT of projects using this gem will have their own styles
 @import "theme-switch";
 
